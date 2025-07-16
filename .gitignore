@@ -1,3 +1,4 @@
+# Laravel specific
 *.log
 .DS_Store
 .env
@@ -21,4 +22,40 @@
 /vendor
 Homestead.json
 Homestead.yaml
+Thumbs.db
+
+# Additional Laravel patterns
+/bootstrap/cache/*.php
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/storage/app/public/*
+!storage/framework/cache/.gitkeep
+!storage/framework/sessions/.gitkeep
+!storage/framework/views/.gitkeep
+!storage/logs/.gitkeep
+!storage/app/public/.gitkeep
+
+# Composer
+composer.phar
+composer.lock
+
+# IDE
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php
+
+# Testing
+.phpunit.cache/
+coverage/
+.coverage/
+
+# Backup files
+*.bak
+*.backup
+*.sql
+
+# OS files
+.DS_Store
 Thumbs.db
